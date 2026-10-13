@@ -37,7 +37,7 @@ export function checkAvailability(
   }
 
   // Rule 2: max 120 minutes
-  if (end - start >= 120) {
+  if (end - start > 120) {
     return { available: false, reasons: ["Bookings cannot be longer than 120 minutes."] };
   }
 
